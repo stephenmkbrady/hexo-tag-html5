@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-html5video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hexo tag to enable embedding html5video video into a post.",
   "main": "index.js",
   "scripts": {
