@@ -1,0 +1,21 @@
+{
+  "name": "hexo-tag-html5video",
+  "version": "1.0.0",
+  "description": "Hexo tag to enable embedding html5video video into a post.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webm",
+    "mp4",
+    "html5video",
+    "hexo",
+    "post",
+    "video",
+    "tag",
+    "hexo-tag"
+  ],
+  "author": "Stephen Brady",
+  "license": "ISC"
+}
