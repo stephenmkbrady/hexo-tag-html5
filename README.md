@@ -1,39 +1,23 @@
 Adding embedded html5 video to hexo
-
-{% html5video %} 
-{% asset_path big-buck-bunny_trailer.webm %}
-{% endhtml5video %} 
-
-Usage:
-With no args, the defaults are used:
-width = '100%'
-height = '250px'
-codec = 'video/webm'
-
-{% html5video %} 
-{% asset_path big-buck-bunny_trailer.webm %}
-{% endhtml5video %} 
-
-or with args:
-
-{% html5video '100%' '250px' 'video/mp4' %} 
-{% asset_path big-buck-bunny_trailer.webm %}
-{% endhtml5video %} 
-
-Add hexo-tag-html5 to your _config.yml file including all the other packages you're using. (Once you include one, you will need to include them all, grab the list from you package.json)
-
-Example:
-plugins: [hexo-tag-html5, 
-          hexo-deployer-git,  
-          hexo-server, 
-          hexo-generator-index, 
-          hexo-generator-archive, 
-          hexo-generator-category,
-          hexo-generator-json-content,
-          hexo-generator-tag,
-          hexo-renderer-ejs,
-          hexo-renderer-marked,
-          hexo-renderer-stylus,
-          hexo-tag-bootstrap,
-          hexo-tag-fontawesome,
-          hexo-tag-leaflet]
+<pre>
+Steps to use:
+1. Install hexo and create a blog called "blog": hexo init blog
+2. Create a folder called "vid" inside source the source folder.
+|->blog 
+|   |
+|   |->source
+        |-> vid
+        |-> _posts
+3. Install via npm: npm install hexo-tag-html5video
+4. Inside blog/_config.yml file add the following line:
+plugin:[hexo-tag-html5video]
+5. Download and save the video from https://github.com/phisonk/lab4/blob/master/big-buck-bunny_trailer.webm
+6. Move the webm to the vid folder you created in source->vid
+7. Add the following text to your page:
+{% html5video 50% 200px video/webm %} vid/big-buck-bunny_trailer.webm {% endhtml5video %}
+or
+{% html5video %} vid/big-buck-bunny_trailer.webm {% endhtml5video %}
+8. hexo generate
+9. hexo init
+10. Goto http://localhost:4000 in browser.
+<pre>
