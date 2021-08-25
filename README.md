@@ -18,6 +18,6 @@ plugin:[hexo-tag-html5video]
 or
 {% html5video %} vid/big-buck-bunny_trailer.webm {% endhtml5video %}
 8. hexo generate
-9. hexo init
+9. hexo server
 10. Goto http://localhost:4000 in browser.
 <pre>
