@@ -14,7 +14,7 @@ plugin:[hexo-tag-html5video]
 5. Download and save the video from https://github.com/phisonk/lab4/blob/master/big-buck-bunny_trailer.webm
 6. Move the webm to the vid folder you created in source->vid
 7. Add the following text to your page:
-{% html5video 50% 200px video/webm %} vid/big-buck-bunny_trailer.webm {% endhtml5video %}
+{% html5video 50% 200px video/webm %} /vid/big-buck-bunny_trailer.webm {% endhtml5video %}
 or
 {% html5video %} vid/big-buck-bunny_trailer.webm {% endhtml5video %}
 8. hexo generate
